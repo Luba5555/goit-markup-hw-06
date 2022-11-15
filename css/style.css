@@ -133,7 +133,7 @@ ul {
 
     transition: color var(--time) var(--function-time);
 }
-.nav-list.current {
+.nav-list .current {
     color: var(--header-color-hover);
 }
 
@@ -481,6 +481,7 @@ ul {
 .footer-container {
     display: flex;
     gap: 70px;
+    align-items: baseline;
 }
 .footer-address {
     width: 231px;
@@ -539,14 +540,14 @@ ul {
     margin-bottom: 0;
 }
 
-.footer-socials {
+/*.footer-socials {
     display: flex;
     flex-direction: column;
     align-items: baseline;
     width: 206px;
     margin-left: 0;
     margin-top: 15px;
-}
+}*/
 .sign-on {
     font-weight: 700;
     font-size: 14px;
