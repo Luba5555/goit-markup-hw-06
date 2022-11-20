@@ -793,7 +793,8 @@ ul {
     display: flex;
     justify-content: space-between;
     width: 423px;
-    margin-left: 13px;
+    margin-left: 12px;
+    margin-right: 11px;
     margin-bottom: 30px;
     gap: 7px;
     align-items: center;
@@ -814,13 +815,13 @@ ul {
     height: 15px;
     margin: 0;
     top: 50%;
-    left: 10px;
+    left: 0px;
     transform: translateY(-50%);
   } 
   .modal-agreement-icon {
     position: absolute;
     top: 50%;
-    left: 10px;
+    left: 1px;
     transform: translateY(-50%);
     border: 1.5px solid var(--main-title-color);
     transition: var(--time);    
@@ -833,7 +834,7 @@ ul {
   }
   .modal-form-agreement-desc {
     display: inline-block;
-    margin-left: 36px;
+    margin-left: 23px;
   }
 
 .modal-form-btn {
