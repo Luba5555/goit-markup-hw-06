@@ -576,6 +576,53 @@ ul {
 .socials-icon .footer {
     fill: currentColor;
 }
+.footer-subscribe {
+    margin: 0;
+    margin-left: auto;
+    padding: 0;
+}
+.footer-subscribe-field-form {
+    width: 358px;
+    height: 50px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 16px;
+    background-color: inherit;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    color: var(--background-color);
+}
+
+.footer-subscribe-field-form::placeholder {
+    font-size: 16px;
+    line-height: calc(20 / 16);
+
+    color: rgba(255, 255, 255, 0.6);
+}
+.btn-subscribe {
+    display: inline-flex;
+    justify-content: space-between;
+    
+    min-width: 200px;
+    padding: 10px 28px;
+    margin-left: 10px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(30 / 16);
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--banner-text-color);
+    background-color: var(--btn-color);
+    border-width: 0;
+    box-shadow: none;
+    border-radius: 4px;
+    transition: box-shadow var(--time) var(--function-time);
+}
+.btn-subscribe:hover,
+.btn-subscribe:focus {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
 
 /*-------------FOOTER---------------*/
 
@@ -603,6 +650,7 @@ ul {
 
     width: 528px;
     min-height: 581px;
+    padding: 40px;
     
     transform: translate(-50%, -50%);
 
@@ -633,8 +681,183 @@ ul {
     border: 1px solid rgba(0, 0, 0, 0.1);
     cursor: pointer;
 }
-.modal-icon {
+.modal-form-group {
+    margin-bottom: 20px;
+}
+.modal-title {
+    display: block;
+    margin-bottom: 12px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: calc(23 / 20);
+    color: var(--main-title-color);
+}
+.modal-form-lable {
+    display: block;
+    font-size: 12px;
+    font-weight: 448px;
+    margin-bottom: 4px;
+}
+.modal-form-wrapper {
+    position: relative;
+    margin-bottom: 10px;
+}
+.modal-form-field {
+    width: 100%;
+    height: 40px;
+    padding-left: 42px;
+    padding-right: 42px;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    outline: 1px solid transparent;
+    transition: outline var(--time) var(--function-time);
+}
+.modal-form-field:focus {
+    outline-color: var(--btn-color);
+
+}
+.modal-form-icon {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+    transition: fill var(--time) var(--function-time);
+}
+.modal-form-field:focus + .modal-form-icon {
+    fill: var(--btn-color)
+}
+.modal-form-massage {
+    width: 100%;
+    height: 120px;
+    padding: 12px 16px;
+        
+    resize: none;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    outline: 1px solid transparent;
+    transition: outline var(--time) var(--function-time);
+}
+.modal-form-massage:focus {
+    outline-color: var(--btn-color);
+}
+.modal-form-massagem::placeholder {
+    font-size: 12px;
+    line-height: calc(14 /12);
+    letter-spacing: 0.01em;
+
+    color: rgba(117, 117, 117, 0.5);
+}
+/*
+.modal-form-agreement {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 7px;
+    margin-bottom: 30px;
+    width: 423px;
+    margin-left: 13px;
     
+}
+.modal-form-agreement-desc {
+    line-height: calc(24 / 14);
+
+    user-select: none;
+}
+.modal-form-agreement-link {
+    color: var(--btn-color);
+}
+.modal-form-checkbox {
+    appearance: none;
+    width: 16px;
+    height: 15px;
+    outline: 2px solid transparent;
+    outline-offset: -2px;
+    border: 2px solid var(--main-title-color);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 0;
+    background-image: url("data:image/svg+xml,%3Csvg width='13' height='10' viewBox='0 0 13 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.95703 4.75166L1.88825 4.68604L1.81923 4.75141L0.93123 5.59258L0.854858 5.66492L0.930974 5.73753L4.42671 9.07236L4.49574 9.1382L4.56476 9.07236L12.069 1.91352L12.1449 1.84116L12.069 1.76881L11.1873 0.927644L11.1183 0.861826L11.0493 0.927611L4.49577 7.17353L1.95703 4.75166Z' fill='white' stroke='white' stroke-width='0.2'/%3E%3C/svg%3E%0A");
+    transition: var(--time);
+}
+.modal-form-checkbox:checked {
+    outline-color: var(--header-color-hover);
+    background-color: var(--header-color-hover);
+    background-size: 16px 15px;
+}*/
+
+.modal-form-agreement {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 423px;
+    margin-left: 13px;
+    margin-bottom: 30px;
+    gap: 7px;
+    align-items: center;
+    line-height: calc(24 / 14);
+    
+    color: inherit;
+
+    user-select: none;
+  } 
+  .modal-form-agreement-link {
+    text-decoration-line: underline;
+    color: var(--btn-color);
+  } 
+  .modal-form-checkbox {
+    position: absolute;
+    appearance: none;
+    width: 16px;
+    height: 15px;
+    margin: 0;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+  } 
+  .modal-agreement-icon {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    border: 1.5px solid var(--main-title-color);
+    transition: var(--time);    
+  } 
+  .modal-form-checkbox:checked + .modal-agreement-icon {
+    background-color: var(--btn-color);
+    border-color: var(--btn-color);
+    background-origin: border-box;
+    border-radius: 2px;
+  }
+  .modal-form-agreement-desc {
+    display: inline-block;
+    margin-left: 36px;
+  }
+
+.modal-form-btn {
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+    padding: 10px 52px;
+    
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(30 / 16);
+    letter-spacing: 0.06em;
+    color: var(--banner-text-color);
+
+    background: var(--btn-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    
+    border-radius: 4px;
+    border-color: transparent;
+    border-width: 0;
+}
+.modal-form-btn:hover, .modal-form-btn:focus {
+    background: #188CE8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 /*-------------MODAL WINDOW---------------*/
 
